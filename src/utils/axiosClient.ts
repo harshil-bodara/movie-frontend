@@ -11,7 +11,7 @@ export type APISuccessResponse<T = undefined> = {
 
 const createAxiosInstance = (): AxiosInstance => {
   const instance = axios.create({
-    baseURL: "http://localhost:4000",
+    baseURL: process.env.NEXT_PUBLIC_BASE_URL,
     headers: {
       'Content-Type': 'application/json'
     }
