@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 import { Button } from "@nextui-org/react";
 
@@ -24,7 +25,7 @@ const Buttons = ({
         ${variant === "default" && "bg-primary py-2 px-7"}
         ${variant === "danger" && "bg-[#EB5757] py-2 px-7"}
         ${variant === "outline" && "border border-white bg-transparent py-2 px-7"}
-        ${disabled && "opacity-60 pointer-events-none"}
+        ${disabled && "!opacity-60 pointer-events-none"}
         ${className && className}
     `;
 
